@@ -2,9 +2,8 @@
 
 Text to image generation with FLUX.1 on Runpod Serverless. This is a plain `diffusers` worker. No ComfyUI, no InvokeAI, no web UI. You send JSON, you get a base64 PNG back, and the endpoint scales to zero so billing stops between requests.
 
-[![Runpod](https://api.runpod.io/badge/USERNAME/runpod-flux-serverless)](https://console.runpod.io/hub/USERNAME/runpod-flux-serverless)
+[![Runpod](https://api.runpod.io/badge/NathanWhite-hub/runpod-flux-serverless)](https://console.runpod.io/hub/NathanWhite-hub/runpod-flux-serverless)
 
-> Replace `USERNAME` in the badge URL with your GitHub username once the repo is live.
 
 ## Why diffusers and not InvokeAI
 
