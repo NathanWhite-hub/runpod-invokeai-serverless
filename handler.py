@@ -1,5 +1,12 @@
-import base64
 import os
+import sys
+
+# Worker deps live in an isolated folder so they do not collide with InvokeAI's
+# own packages. Add it to this process only. The invokeai-web subprocess does
+# not inherit it and keeps using the /opt/venv environment.
+sys.path.insert(0, os.environ.get("HANDLER_DEPS", "/opt/handler-deps"))
+
+import base64
 import subprocess
 import time
 
